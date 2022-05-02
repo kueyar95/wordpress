@@ -1,0 +1,14 @@
+{
+  "name": "lapizzeria-gutenberg",
+  "version": "1.0.0",
+  "description": "Agrega bloques de Gutenberg",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "José Cuellar",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^22.5.0"
+  }
+}
