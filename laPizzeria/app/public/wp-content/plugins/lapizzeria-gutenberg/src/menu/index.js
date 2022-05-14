@@ -74,9 +74,11 @@ registerBlockType("lapizzeria/menu", {
       //Verificar categorias
       if (!categorias) {
         console.log("No hay categorias");
+        return null;
       }
       if (categorias && categorias.length === 0) {
         console.log("No hay resultados");
+        return null;
       }
       //Generar label y value para categorias
       categorias.forEach((categoria) => {

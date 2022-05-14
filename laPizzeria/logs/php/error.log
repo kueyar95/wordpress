@@ -2689,3 +2689,39 @@ Stack trace:
 [10-May-2022 19:44:33 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 99
 [10-May-2022 19:46:34 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 99
 [10-May-2022 21:02:23 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-content\plugins\lapizzeria-gutenberg\lapizzeria-gutenberg.php on line 99
+[13-May-2022 13:14:13 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'lapizzeria_frontend_scripts' not found or invalid function name in C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-includes\class-wp-hook.php on line 307
+[13-May-2022 13:14:13 UTC] PHP Stack trace:
+[13-May-2022 13:14:13 UTC] PHP   1. {main}() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\index.php:0
+[13-May-2022 13:14:13 UTC] PHP   2. require() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\index.php:17
+[13-May-2022 13:14:13 UTC] PHP   3. require_once() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-blog-header.php:19
+[13-May-2022 13:14:13 UTC] PHP   4. include() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-includes\template-loader.php:106
+[13-May-2022 13:14:13 UTC] PHP   5. get_header() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-content\themes\lapizzeria\page.php:1
+[13-May-2022 13:14:13 UTC] PHP   6. locate_template() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-includes\general-template.php:48
+[13-May-2022 13:14:13 UTC] PHP   7. load_template() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-includes\template.php:716
+[13-May-2022 13:14:13 UTC] PHP   8. require_once() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-includes\template.php:770
+[13-May-2022 13:14:13 UTC] PHP   9. wp_head() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-content\themes\lapizzeria\header.php:7
+[13-May-2022 13:14:13 UTC] PHP  10. do_action() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-includes\general-template.php:3042
+[13-May-2022 13:14:13 UTC] PHP  11. WP_Hook->do_action() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-includes\plugin.php:474
+[13-May-2022 13:14:13 UTC] PHP  12. WP_Hook->apply_filters() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-includes\class-wp-hook.php:331
+[13-May-2022 13:14:13 UTC] PHP  13. wp_enqueue_scripts() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-includes\class-wp-hook.php:307
+[13-May-2022 13:14:13 UTC] PHP  14. do_action() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-includes\script-loader.php:2115
+[13-May-2022 13:14:13 UTC] PHP  15. WP_Hook->do_action() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-includes\plugin.php:474
+[13-May-2022 13:14:13 UTC] PHP  16. WP_Hook->apply_filters() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-includes\class-wp-hook.php:331
+[13-May-2022 13:14:13 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'lapizzeria_frontend_scripts' not found or invalid function name in C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-includes\class-wp-hook.php on line 307
+[13-May-2022 13:14:13 UTC] PHP Stack trace:
+[13-May-2022 13:14:13 UTC] PHP   1. {main}() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\index.php:0
+[13-May-2022 13:14:13 UTC] PHP   2. require() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\index.php:17
+[13-May-2022 13:14:13 UTC] PHP   3. require_once() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-blog-header.php:19
+[13-May-2022 13:14:13 UTC] PHP   4. include() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-includes\template-loader.php:106
+[13-May-2022 13:14:13 UTC] PHP   5. get_header() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-content\themes\lapizzeria\page.php:1
+[13-May-2022 13:14:13 UTC] PHP   6. locate_template() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-includes\general-template.php:48
+[13-May-2022 13:14:13 UTC] PHP   7. load_template() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-includes\template.php:716
+[13-May-2022 13:14:13 UTC] PHP   8. require_once() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-includes\template.php:770
+[13-May-2022 13:14:13 UTC] PHP   9. wp_head() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-content\themes\lapizzeria\header.php:7
+[13-May-2022 13:14:13 UTC] PHP  10. do_action() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-includes\general-template.php:3042
+[13-May-2022 13:14:13 UTC] PHP  11. WP_Hook->do_action() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-includes\plugin.php:474
+[13-May-2022 13:14:13 UTC] PHP  12. WP_Hook->apply_filters() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-includes\class-wp-hook.php:331
+[13-May-2022 13:14:13 UTC] PHP  13. wp_enqueue_scripts() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-includes\class-wp-hook.php:307
+[13-May-2022 13:14:13 UTC] PHP  14. do_action() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-includes\script-loader.php:2115
+[13-May-2022 13:14:13 UTC] PHP  15. WP_Hook->do_action() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-includes\plugin.php:474
+[13-May-2022 13:14:13 UTC] PHP  16. WP_Hook->apply_filters() C:\Users\HP\Documents\Programacion\Desarrollo Web\wordpress\laPizzeria\app\public\wp-includes\class-wp-hook.php:331

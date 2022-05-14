@@ -60,7 +60,11 @@ function lapizzeria_registrarBloques(){
 
     //Arreglo de bloques
     $blocks = [
-        'lapizzeria/boxes'
+        'lapizzeria/boxes',
+        'lapizzeria/galeria',
+        'lapizzeria/hero',
+        'lapizzeria/textoimagen',
+        'lapizzeria/contenedor'
     ];
 
     //Recorrer bloques, agregar scripts y styles
@@ -87,21 +91,28 @@ add_action('init','lapizzeria_registrarBloques');
 
 function lapizzeria_especialidades_frontEnd($atts){
     
-    echo '<pre>';
-    var_dump($atts);
-    echo '<pre>';
+    //echo '<pre>';
+    //var_dump($atts);
+    //echo '<pre>';
 
+    //Extraer valores y agregar defaults
+    $cantidad = $atts['cantidadMostrar'] ? $atts['cantidadMostrar'] : 4;
+    $tituloBloque = $atts['tituloBloque'] ? $atts['tituloBloque'] : 'Nuestras Especialidades';
+    $tax_query = array();
+    if(isset($atts['categoriaMenu'])){
+        $tax_query[] = array(
+                'taxonomy' => 'categoria-menu',
+                'terms' => $atts['categoriaMenu'],
+                'field' => 'term_id'
+        );
+        
+    }
     //Obtener datos del Query
     $especialidades = wp_get_recent_posts(array(
         'post_type' => 'especialidades',
         'post_status' => 'publish',
-        'numberposts' => $atts['cantidadMostrar'],
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'categoria-menu',
-                'terms' => $atts['categoriaMenu']
-            )
-        )
+        'numberposts' => $cantidad,
+        'tax_query' => $tax_query
     ));
 
     //Revisar que haya resultados
@@ -111,7 +122,9 @@ function lapizzeria_especialidades_frontEnd($atts){
     }
 
     $cuerpo = '';
-    $cuerpo .= '<h2 class="titulo-menu">Nuestras Especialidades</h2>';
+    $cuerpo .= '<h2 class="titulo-menu">';
+    $cuerpo .= $tituloBloque;
+    $cuerpo .= '</h2>';
     $cuerpo .= '<ul class="nuestro-menu">';
     foreach($especialidades as $esp):
         //Obtener un objeto del post
@@ -144,6 +157,12 @@ function lapizzeria_especialidades_frontEnd($atts){
 
     return $cuerpo;
 
-
-
 }
+
+//Agregar lightbox a plugin
+
+function lapizzeria_frontend_scripts(){
+    wp_enqueue_style('lightboxCSS', 'https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css', array(), '2.11.3');
+    wp_enqueue_script('lightboxJS', 'https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js', array('jquery'), '2.11.3', true);
+}
+add_action('wp_enqueue_scripts', 'lapizzeria_frontend_scripts');
